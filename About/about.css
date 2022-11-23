@@ -1,0 +1,85 @@
+#about{
+  /* height: 100vh; */
+  width: 100%;
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.about{
+  width: 40%;
+  /* height: 60vh;  */
+  padding: 30px;
+  box-shadow: 0 0 10px gray;
+  margin: 10px;
+  text-align: center;
+}
+.about h1{
+  margin: 10px;
+}
+.about .taps{
+  margin: 20px 0;
+}
+.about .titles{
+  display: flex;
+  justify-content: space-between;
+}
+.about .text{
+  background-color: #000;
+  height: 200px;
+}
+.about .text p{
+  padding: 20px;
+  color: #fff;
+}
+.titles h3{
+  padding: 10px;
+  border-radius: 15px 15px 0 0;
+}
+.titles .change{
+  background-color: #000;
+  color: #fff;
+}
+.contact{
+  width: 40%;
+  height: 60vh; 
+  padding: 30px;
+  box-shadow: 0 0 10px gray;
+  margin: 10px;
+}
+.contact h1{
+  font-size: 28px;
+}
+.contact p{
+  width: 80%;
+}
+.contact a{
+  text-decoration: none;
+}
+.contact h5{
+  color: gray;
+  font-weight: 200;
+  display: inline-block;
+}
+.contact i{
+  font-size: 18px;
+  margin: 10px;
+  color: #000;
+}
+
+@media (max-width: 800px) {
+  #about{
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .about{
+    width: 80%;
+  }
+  .contact{
+    width: 80%;
+  }
+  .titles h3{
+    font-size: 16px;
+  }
+}
