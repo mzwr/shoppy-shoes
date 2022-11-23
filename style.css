@@ -1,0 +1,251 @@
+/* main section */
+#main{
+  height: 100vh;
+  /* width: 100%; */
+  background-color: rgb(255, 255, 255);
+  margin-top: 100px;
+}
+.container{
+  height: 80%;
+  position: relative;
+  background-color: #fff;
+}
+.container h1{
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 60px;
+  width: 280px;
+}
+.container p{
+  font-size: 18px;
+  font-weight: 500;
+  width: 250px;
+  margin: 25px 0px;
+}
+.container button{
+  padding: 11px 74px 11px 31px;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.container button:hover{
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 0;
+}
+.container .discreption{
+  position: absolute;
+  top: 200px;
+  padding: 0 83px 30px 24px;
+}
+.shoesI{
+  position: absolute;
+  right: 374px;
+  top: 80px;
+}
+.shoesII{
+  position: absolute;
+  right: 54px;
+  top: 13px;
+}
+.mobilImgII{
+  display: none;
+}
+.mobilImgI{
+  display: none;
+}
+@media (max-width: 750px){
+  #main{
+    height: 120vh;
+  }
+  .imgI{
+    display: none;
+  }
+  .imgII{
+    display: none;
+  }
+  .mobilImgI{
+    position: absolute;
+    display: block;
+    top: 78px;
+    right: 0;
+  }
+  .mobilImgII{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  .container .discreption{
+    top: 430px;
+    left: 0;
+    right: 0;
+    /* text-align: center; */
+  }
+  .container .discreption h1{
+    /* margin-left: 24px; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .container p{
+    /* margin-left:24px; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    text-align: center;
+  }
+  .container button{
+    /* margin-left:24px; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 190px;
+    padding: 15px 30px;
+  }
+}
+
+
+
+/* shoes images */
+#shoesImgs{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px;
+}
+.shoesCarigory{
+  width: 630px;
+  height: 395px; 
+}
+.shoesImg{
+  position: relative;
+  background-color: #fff;
+}
+.shoesImg h2{
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  color: #fff;
+}
+.shoesImg p{
+  position: absolute;
+  bottom: 60px;
+}
+.womenP{
+  right: 45px;
+}
+.menP{
+  left: 20px;
+  color: #fff;
+}
+@media (max-width: 750px) {
+  .shoesCarigory{
+    width: 300px;
+    height: 190px;
+  }
+  #shoesImgs{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .shoesImg h2{
+    top: 10px;
+    left: 10px;
+  }
+  .womenP{
+    right: 10px;
+  }
+  .menP{
+    left: 10px;
+  }
+  .shoesImg p{
+    bottom: 8px;
+  }
+}
+
+
+
+
+/* slider section */
+#slider{
+  margin: 24px;
+}
+.swiper-slide img{
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after{
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+@media (max-width:500px){
+  .swiper-slide img{
+    height: 180px;
+    width: 150px;
+    object-fit: cover;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after{
+    height: 30px;
+    width: 30px;
+  }
+
+}
+
+
+
+/* join section */
+#join{
+  height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#text{
+  text-align: center;
+  width: 300px;
+}
+#text h2{
+  margin: 0 18px;
+  font-size: 40px;
+  font-weight: 800;
+}
+#text p{
+  font-size: 18px;
+  font-weight: 500;
+}
+#text button{
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 22px;
+  padding: 13px 23px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+#text button:hover{
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+@media (max-width: 500px) {
+  #join{
+    height: 80vh;
+  }
+}
+

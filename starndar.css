@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white; 
+  height: 80px;
+  z-index: 999;
+}
+header .navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+header .navbar ul li{
+  margin: 25px;
+}
+header .navbar ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-Size: 18px;
+}
+header .navbar ul li:hover{
+  border-bottom:2px solid #000;
+}
+.shoppy{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* left: 46%;  */
+  padding: 7px 50px;
+  color: white;
+  background-color: black;
+  transition: 0.3s;
+}
+.shoppy:hover{
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+.shoppy:hover a{
+  color: #000;
+}
+.shoppy a{
+  color: white;
+  text-decoration: none;
+}
+.close{
+  display: none; 
+}
+.open{
+  display: none; 
+}
+.icons{
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+.icons i{
+  font-size: 22px;
+}
+@media (max-width: 1200px) {
+  header .navbar ul li{
+    margin: 25px 10px;  
+  }
+}
+
+@media (max-width: 950px){
+  header{
+    height: 60px;
+  }
+  header .navbar ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    width: 250px;
+    transition: 0.4s;
+    left: -250px;
+  }
+  header .navbar ul li a{
+    color: white;
+    border-radius: 50px;
+    transition: 0.2s;
+    border-bottom: 0px solid;
+  }
+  header .navbar ul li:hover a{
+    background-color: #fff;
+    padding: 20px 70px;
+    color: #000;
+    border-radius: 5px;
+  }
+  .open{
+    display: block;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .open i{
+    font-size: 22px;
+  }
+  .show{
+    transform: translateX(250px);
+  }
+}
+@media (max-width: 500px) {
+
+  .icons{
+    display: flex;
+    gap: 12px;
+    margin-right: 10px;
+  }
+  .icons i{
+    font-size: 18px;
+  }
+  
+}
+
+
+
+/* footer */
+footer{
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: black;
+  color: white;
+  padding: 50px 110px 20px 24px;
+  /* height: 40vh; */
+}
+footer a{
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #797878;
+}
+footer div{
+  width: 160px;
+  text-align: left;
+}
+footer p{
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 6px;
+}
+footer.footer-links{
+  text-align: right;
+  width: 300px;
+}
+footer.footer-links a{
+  margin-right: 40px; 
+}
+footer .footer-links span{
+  font-size: 22px;
+  margin-left: 8px;
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+  color: #797878;
+  margin-top: 70px;
+}
+@media (max-width:750px) {
+  
+  footer div{
+    margin-top: 16px;
+    width: 100px;
+  }
+  .footer-links{
+    text-align: left;
+    margin-top: 16px;
+    width: 160px;
+  }
+}
